@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+    <script LANGUAGE="Javascript">
+        function feweboutils (form)
+        {form.eur.value = form.fra.value/6.5597}
+        function efweboutils (form)
+        { form.fra.value = form.eur.value*6.5597}
+        </script>
+        <script language="JavaScript">
+        function feweboutils (form)
+        {form.eur.value = form.fra.value/6.5597}
+        function efweboutils (form)
+        { form.fra.value = form.eur.value*6.5597}
+        </script>
+        <form> 
+        <input type ="text" name="fra" size=15 >
+        <input type ="button" value="franc en euro" onClick="feweboutils(this.form)" name="button">
+        <input type="text" name="eur" size=15 >
+        </form>
+        <form> 
+        <input type ="text" name="eur" size=15 >
+        <input type = "button" value="euro en franc" onClick="efweboutils(this.form)" name="button">
+        <input type="text" name="fra" size=15 >
+        </form> 
+</BODY>
+</HTML>

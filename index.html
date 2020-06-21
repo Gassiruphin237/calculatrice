@@ -1,0 +1,68 @@
+<html> 
+   <head> 
+    <link rel="stylesheet" href="css.css" media="screen" type="text/css" />
+      <script> 
+         //fonction qui évalue le chiffre et renvoie la sortie
+         function calculer() 
+         { 
+             let a = document.getElementById("output").value 
+             let b = eval(a) 
+             document.getElementById("output").value = b 
+         } 
+         //fonction qui affiche la valeur
+         function afficher(val) 
+         { 
+             document.getElementById("output").value+=val 
+         } 
+         //fonction qui efface l'écran 
+         function effacer() 
+         { 
+             document.getElementById("output").value = "" 
+         } 
+      </script>
+      <style>
+        td button{width:100%}
+      </style>
+   </head> 
+   <body>
+    <div id="container">
+        <!-- zone de calculatrice -->
+       <h2 class="q">#MyCalculator</h2>
+      <img src="ee.png" width="100" height="100" class="e"></br> 
+      <table> 
+         <tr> 
+            <td colspan="4"><input id="output" value=""/></td>  
+         </tr> 
+         <tr> 
+            <td><button onclick="effacer()"class="ep">c</button></td>
+            <td><button onclick=""class="ep">+/-</button></td>
+            <td><button onclick=""class="ep">%</button></td>
+            <td><button onclick="afficher('/')" class="ed">/</button></td>
+         </tr> 
+         <tr> 
+         <td><button onclick="afficher('7')"class="ee">7</button></td> 
+         <td><button onclick="afficher('8')"class="ee">8</button></td> 
+         <td><button onclick="afficher('9')"class="ee">9</button></td> 
+         <td><button onclick="afficher('*')"class="ed">*</button></td> 
+         </tr> 
+         <tr> 
+            <td><button onclick="afficher('4')"class="ee">4</button></td> 
+            <td><button onclick="afficher('5')"class="ee">5</button></td> 
+            <td><button onclick="afficher('6')"class="ee">6</button></td> 
+            <td><button onclick="afficher('-')"class="ed">-</button></td> 
+         </tr> 
+         <tr> 
+            <td><button onclick="afficher('1')"class="ee">1</button></td> 
+            <td><button onclick="afficher('2')"class="ee">2</button></td> 
+            <td><button onclick="afficher('3')"class="ee">3</button></td>
+            <td><button onclick="afficher('+')"class="ed">+</button></td>  
+         </tr> 
+         <tr>
+            <td><button onclick="afficher('0')"class="ee">0</button></td> 
+            <td><button onclick="afficher('.')"class="ee">.</button></td> 
+            <td><button onclick="calculer()"class="ed">=</button></td> 
+         </tr> 
+      </table> 
+</div>
+   </body> 
+</html>
